@@ -599,7 +599,7 @@ COUNSELING DIRECTIVES:
 7. Format your response cleanly with clear headings, bullet points, and bold text. Avoid generic or repetitive answers.`;
 
       const geminiPromise = ai.models.generateContent({
-        model: "gemini-3.8-flash",
+        model: "gemini-2.5-flash",
         contents: [
           { text: `Student Question: ${userMessage}` },
         ],
@@ -663,7 +663,7 @@ COUNSELING DIRECTIVES:
       }
 
       const response = await ai.models.generateContent({
-        model: "gemini-3.8-flash",
+        model: "gemini-2.5-flash",
         contents: `Evaluate this student's academic profile for higher education admissions in Kerala, with specific reference to Chathamkulam Group of Institutions (Palakkad):
 Profile:
 - Name: ${profile.name}
